@@ -138,3 +138,4 @@ install_gpg() {
 
     log_info "gpg installed successfully."
 }
+install_gpg
