@@ -1,0 +1,1 @@
+gpg --quick-generate-key "Server A <servera@eg.com>" rsa4096 encrypt
