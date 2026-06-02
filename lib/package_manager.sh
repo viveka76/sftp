@@ -115,8 +115,11 @@ install_gpg() {
         apt)
             sudo apt install -y "${packages[@]}"
             ;;
-        dnf|yum)
-            sudo "$pkg_mgr" install -y "${packages[@]}"
+        dnf)
+            sudo dnf install -y --allowerasing "${packages[@]}"
+            ;;
+        yum)
+            sudo yum install -y "${packages[@]}"
             ;;
         pacman)
             sudo pacman -S --noconfirm "${packages[@]}"
